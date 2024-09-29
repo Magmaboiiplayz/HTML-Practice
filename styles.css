@@ -6,12 +6,13 @@
 }
 
 :root {
-  --primary-color: #618cd0; /* Blue */
-  --accent-color: #f46530;  /* Orange */
+  --primary-color: #e04d26 ;
+  --accent-color: ;  
   --background-light: #ffffff;
   --background-dark: #f0f0f0;
   --text-color: #333;
   --shadow: rgba(0, 0, 0, 0.1);
+  
 }
 
 body {
@@ -855,4 +856,9 @@ nav ul li a:hover {
   margin-top: 5px;
   font-size: 12px;
   color: #333;
+}
+
+
+#colored-text {
+  color: var(--primary-color); /* Change this to any color you like */
 }
