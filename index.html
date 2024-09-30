@@ -33,99 +33,104 @@
       <section class="hero">
         <section class="hero">
           <div class="hero-text">
-              <h1 class = "typing-effect">Welcome to Career Counseling</h1>
-              <p class = "typing-effect">Your Journey to a Fulfilling Career Starts Here</p>
-              <a href="services.html" class="cta-button">Explore Our Services</a>
-              <script>
-                $(window).on("load", function () {
-                  $(".loader").fadeOut(1500);
-                  $(".content").fadeIn(1500);
-                });
-              
-                function typeEffect(element, text, speed) {
-                  let index = 0;
-              
-                  function type() {
-                    if (index < text.length) {
-                      element.innerHTML += text.charAt(index);
-                      index++;
-                      setTimeout(type, speed);
-                    }
+            <h1 class="typing-effect">Welcome to Career Counseling</h1>
+            <p class="typing-effect">
+              Your Journey to a Fulfilling Career Starts Here
+            </p>
+            <a href="services.html" class="cta-button">Explore Our Services</a>
+            <script>
+              $(window).on("load", function () {
+                $(".loader").fadeOut(1500);
+                $(".content").fadeIn(1500);
+              });
+
+              function typeEffect(element, text, speed) {
+                let index = 0;
+
+                function type() {
+                  if (index < text.length) {
+                    element.innerHTML += text.charAt(index);
+                    index++;
+                    setTimeout(type, speed);
                   }
-              
-                  type();
                 }
-              
-                window.onload = function() {
-                  const h1Element = document.querySelector(".hero-text h1");
-                  const pElement = document.querySelector(".hero-text p");
-              
-                  const h1Text = "Welcome to Career Counseling";
-                  const pText = "Your Journey to a Fulfilling Career Starts Here";
-              
-                  h1Element.innerHTML = "";
-                  pElement.innerHTML = "";
-              
-                  typeEffect(h1Element, h1Text, 50);
-                  setTimeout(() => {
-                    typeEffect(pElement, pText, 50);
-                  }, h1Text.length * 100 + 500);
-                };
-              </script>  
-              <script>
-                function typeEffect(element, text, speed) {
-                  let index = 0;
-              
-                  function type() {
-                    if (index < text.length) {
-                      element.innerHTML += text.charAt(index);
-                      index++;
-                      setTimeout(type, speed);
-                    }
+
+                type();
+              }
+
+              window.onload = function () {
+                const h1Element = document.querySelector(".hero-text h1");
+                const pElement = document.querySelector(".hero-text p");
+
+                const h1Text = "Welcome to Career Counseling";
+                const pText = "Your Journey to a Fulfilling Career Starts Here";
+
+                h1Element.innerHTML = "";
+                pElement.innerHTML = "";
+
+                typeEffect(h1Element, h1Text, 50);
+                setTimeout(() => {
+                  typeEffect(pElement, pText, 50);
+                }, h1Text.length * 100 + 500);
+              };
+            </script>
+            <script>
+              function typeEffect(element, text, speed) {
+                let index = 0;
+
+                function type() {
+                  if (index < text.length) {
+                    element.innerHTML += text.charAt(index);
+                    index++;
+                    setTimeout(type, speed);
                   }
-              
-                  type();
                 }
-              
-                window.onload = function() {
-                  // Select elements for typing effect
-                  const h1Element = document.querySelector(".hero-text h1");
-                  const pElement = document.querySelector(".hero-text p");
-              
-                  // Text to type
-                  const h1Text = "Welcome to Career Counseling";
-                  const pText = "Your Journey to a Fulfilling Career Starts Here";
-              
-                  // Clear the elements
-                  h1Element.innerHTML = "";
-                  pElement.innerHTML = "";
-              
-                  // Start typing effects
-                  typeEffect(h1Element, h1Text, 100); // Typing speed: 100ms
-                  setTimeout(() => {
-                    typeEffect(pElement, pText, 100);
-                  }, h1Text.length * 100 + 500); // Delay typing of <p> until <h1> is done
-                };
-              </script>
-                          
+
+                type();
+              }
+
+              window.onload = function () {
+                // Select elements for typing effect
+                const h1Element = document.querySelector(".hero-text h1");
+                const pElement = document.querySelector(".hero-text p");
+
+                // Text to type
+                const h1Text = "Welcome to Career Counseling";
+                const pText = "Your Journey to a Fulfilling Career Starts Here";
+
+                // Clear the elements
+                h1Element.innerHTML = "";
+                pElement.innerHTML = "";
+
+                // Start typing effects
+                typeEffect(h1Element, h1Text, 100); // Typing speed: 100ms
+                setTimeout(() => {
+                  typeEffect(pElement, pText, 100);
+                }, h1Text.length * 100 + 500); // Delay typing of <p> until <h1> is done
+              };
+            </script>
           </div>
           <!-- Profile Card -->
           <div class="profile-card">
-              <img src="/Images2/profile-picture.jpg" alt="Profile Picture" class="profile-img">
-              <h2>John Doe</h2>
-              <p>Student at XYZ High School</p>
-              <div class="stats">
-                  <div class="stat">
-                      <h3>15</h3>
-                      <p>Essays Written</p>
-                  </div>
-                  <div class="stat">
-                      <h3>8</h3>
-                      <p>Extracurriculars</p>
-                  </div>
+            <img
+              src="/Images2/profile_pic.png"
+              alt="Profile Picture"
+              class="profile-img"
+            />
+            <h2>John Doe</h2>
+            <p>Student at XYZ High School</p>
+            <div class="stats">
+              <div class="stat">
+                <h3>15</h3>
+                <p>Essays Written</p>
               </div>
-          </div>  
-          </section>    
+              <div class="stat">
+                <h3>8</h3>
+                <p>Extracurriculars</p>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
       <section class="features">
         <div class="feature-card">
@@ -204,26 +209,77 @@
         </div>
       </section>
       <section>
-        <div class="carousel-container">
-          <div class="carousel-slide">
-            <img src="/Images2/GradWoman.jpg" alt="Slide 1" />
-            <div class="carousel-text">Empowering Education</div>
+        <div class="carousel-text-container">
+          <!-- Carousel Section -->
+          <div class="carousel-container">
+            <div class="carousel-slide">
+              <img
+                src="https://via.placeholder.com/600x300?text=Slide+1"
+                alt="Slide 1"
+              />
+              <div class="carousel-text">Empowering Education</div>
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="https://via.placeholder.com/600x300?text=Slide+2"
+                alt="Slide 2"
+              />
+              <div class="carousel-text">Diverse Learning Opportunities</div>
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="https://via.placeholder.com/600x300?text=Slide+3"
+                alt="Slide 3"
+              />
+              <div class="carousel-text">Inspiring Minds</div>
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="https://via.placeholder.com/600x300?text=Slide+4"
+                alt="Slide 4"
+              />
+              <div class="carousel-text">Future Leaders</div>
+            </div>
+            <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+            <a class="next" onclick="moveSlide(1)">&#10095;</a>
           </div>
-          <div class="carousel-slide">
-            <img src="/Images2/Black_Boy.jpg" alt="Slide 2" />
-            <div class="carousel-text">Diverse Learning Opportunities</div>
+
+          <!-- Text Section -->
+          <div class="text-section">
+            <h2>About Our Vision</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              vehicula nunc nec diam fermentum, non tristique eros porttitor.
+              Suspendisse vitae leo at libero volutpat ultrices. Fusce maximus
+              libero vitae orci varius, non aliquet lectus accumsan. Curabitur
+              quis tortor nec ipsum placerat venenatis.
+            </p>
+            <p>
+              Aenean volutpat odio a felis malesuada, non tempor magna aliquam.
+              Etiam eget magna eros. Nulla facilisi. Ut volutpat auctor eros, ac
+              suscipit lorem sagittis nec. Mauris feugiat tellus eget lectus
+              tempor, vitae facilisis lorem ultricies. Nam a nisi libero.
+            </p>
+            <p>
+              Donec a nisl quis lectus iaculis gravida a non quam. Phasellus
+              rhoncus viverra ex, eget fermentum orci dictum at. Ut vel urna nec
+              mauris convallis auctor. Pellentesque luctus augue vitae ante
+              convallis, at posuere orci accumsan.
+            </p>
           </div>
-          <div class="carousel-slide">
-            <img src="/Images2/Boy_Reading.jpg" alt="Slide 3" />
-            <div class="carousel-text">Inspiring Minds</div>
-          </div>
-          <div class="carousel-slide">
-            <img src="/Images2/Black_Girl.jpg" alt="Slide 4" />
-            <div class="carousel-text">Future Leaders</div>
-          </div>
-          <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
-          <a class="next" onclick="moveSlide(1)">&#10095;</a>
         </div>
+        <script>
+          let currentSlide = 0;
+          const slides = document.querySelectorAll(".carousel-slide");
+
+          function moveSlide(direction) {
+            slides[currentSlide].style.display = "none";
+            currentSlide =
+              (currentSlide + direction + slides.length) % slides.length;
+            slides[currentSlide].style.display = "block";
+          }
+        </script>
+
         <script src="index.js"></script>
       </section>
       <section class="events container">

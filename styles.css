@@ -297,12 +297,25 @@ nav {
   display: block;
 }
 
-/* Carousel */
-.carousel-container {
-  position: relative;
+.carousel-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   max-width: 100%;
   margin: 20px auto;
+}
+
+.carousel-container {
+  flex: 1;
+  max-width: 60%; /* Adjust width to fit design needs */
+  margin-right: 20px; /* Add some spacing between carousel and text */
+  position: relative;
   overflow: hidden;
+}
+
+.text-section {
+  flex: 1;
+  max-width: 40%; /* The text takes up the remaining space */
 }
 
 .carousel-slide {
@@ -312,6 +325,28 @@ nav {
 .carousel-slide img {
   width: 100%;
   height: auto;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #000;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Show the first slide initially */
+.carousel-slide:first-child {
+  display: block;
 }
 
 /* Container for the feature cards */
